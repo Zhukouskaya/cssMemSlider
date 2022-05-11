@@ -1,0 +1,29 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #D6CFBD;
+}
+
+.wrapper {
+  width: 60%;
+  height: 70%;
+  overflow: hidden;
+  border: 0.5rem solid #8B776E;
+  margin: 0 auto;
+  margin-top: 10%;
+  /* transform: translate(-50%, -50%); */
+}
+
+.navigation {
+  margin: 0 auto;
+  /* transform: translateX(-50%); */
+  display: flex;
+}
+
+.bar {
+  width: 2rem;
+  height: 0.5rem;
+}
