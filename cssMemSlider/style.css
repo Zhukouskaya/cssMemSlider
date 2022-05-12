@@ -6,37 +6,38 @@
 body {
   color: #F3FEFA;
   font-weight: 700;
-  font-size: 2rem;
+  font-size: 1.5rem;
   background-color: #17161B;
-  /* background: linear-gradient(45deg, rgb(62, 60, 211), rgb(86, 181, 184) 89%); */
   width: 100%;
   height: 100%;
 }
 
 .container {
   display: flex;
-  margin: 0 auto;
-  width: 40rem;
-  height: 40rem;
-  padding-top: 3rem;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  padding: 3rem;
 }
 
 .wrapper {
-  width: 100%;
-  height: 100%;
+  padding: 2rem 1.5rem 0;
+  width: 30rem;
+  height: 30rem;
   overflow: hidden;
   display: grid;
   grid-template-rows: 3fr 1fr;
   grid-template-columns: 3fr 1fr;
+  border: 0.1rem solid rgb(62, 60, 211);
   grid-template-areas:
     'content content'
     'text navigation';
-  row-gap: 0.5rem;
 }
 
 input {
   visibility: hidden;
   width: 0;
+  height: 0;
 }
 
 .slider-wrapper,
@@ -71,7 +72,7 @@ input {
 .slides .slide-item {
   display: flex;
   justify-content: center;
-  width: 40rem;
+  width: 30rem;
 }
 
 .slides-text.slide-item{
@@ -80,17 +81,19 @@ input {
 
 .slides-text-wrapper {
   grid-area: text;
+  padding-top: 1.5rem;
 }
 
 .slides-text .slide-item {
   display: flex;
-  width: 40rem;
+  width: 20rem;
 }
 
 .navigation {
   display: flex;
   justify-content: space-around;
   grid-area: navigation;
+  padding-top: 1.5rem;
 }
 
 .bar {
@@ -115,27 +118,27 @@ input {
 }
 
 #input2:checked ~ .slider-wrapper .slides {
-  transform: translateX(-40rem);
+  transform: translateX(-30rem);
 }
 
 #input3:checked ~ .slider-wrapper .slides {
-  transform: translateX(-80rem);
+  transform: translateX(-60rem);
 }
 
 #input4:checked ~ .slider-wrapper .slides {
-  transform: translateX(-120rem);
+  transform: translateX(-90rem);
 }
 
 #input2:checked ~ .slides-text-wrapper .slides-text {
-  transform: translateX(-40rem);
+  transform: translateX(-20rem);
 }
 
 #input3:checked ~ .slides-text-wrapper .slides-text {
-  transform: translateX(-80rem);
+  transform: translateX(-40rem);
 }
 
 #input4:checked ~ .slides-text-wrapper .slides-text {
-  transform: translateX(-120rem);
+  transform: translateX(-60rem);
 }
 
 
