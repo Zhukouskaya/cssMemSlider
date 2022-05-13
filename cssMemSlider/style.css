@@ -117,13 +117,22 @@ input {
 }
 
 .bar:active {
-  background-color: rgb(116, 114, 184);
+  background-color: red
 }
 
 
 #input1:checked ~ .slider-wrapper .slides,
 #input1:checked ~ .slides-text-wrapper .slides-text {
   transform: translateX(0);
+}
+
+#input1:checked ~ .navigation > label:nth-child(1),
+#input2:checked ~ .navigation > label:nth-child(2),
+#input3:checked ~ .navigation > label:nth-child(3),
+#input4:checked ~ .navigation > label:nth-child(4) {
+  background-color: #F3FEFA;
+  opacity: 0.9;
+  transform: scale(1.1);
 }
 
 #input2:checked ~ .slider-wrapper .slides {
