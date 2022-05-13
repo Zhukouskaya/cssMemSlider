@@ -116,6 +116,11 @@ input {
   transform: scale(1.1);
 }
 
+.bar:active {
+  background-color: rgb(116, 114, 184);
+}
+
+
 #input1:checked ~ .slider-wrapper .slides,
 #input1:checked ~ .slides-text-wrapper .slides-text {
   transform: translateX(0);
