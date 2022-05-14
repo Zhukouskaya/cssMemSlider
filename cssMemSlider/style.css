@@ -111,25 +111,28 @@ input {
   transition: all 0.3s ease;
 }
 
-.bar:hover {
+label:hover .bar{
   opacity: 0.8;
   transform: scale(1.1);
 }
 
-.bar:active {
+label:active .bar{
   background-color: red
 }
-
 
 #input1:checked ~ .slider-wrapper .slides,
 #input1:checked ~ .slides-text-wrapper .slides-text {
   transform: translateX(0);
 }
 
-#input1:checked ~ .navigation > label:nth-child(1),
-#input2:checked ~ .navigation > label:nth-child(2),
-#input3:checked ~ .navigation > label:nth-child(3),
-#input4:checked ~ .navigation > label:nth-child(4) {
+label {
+  cursor: pointer;
+}
+
+#input1:checked ~ .navigation > label:nth-child(1) .bar,
+#input2:checked ~ .navigation > label:nth-child(2) .bar,
+#input3:checked ~ .navigation > label:nth-child(3) .bar,
+#input4:checked ~ .navigation > label:nth-child(4) .bar {
   background-color: #F3FEFA;
   opacity: 0.9;
   transform: scale(1.1);
