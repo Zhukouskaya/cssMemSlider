@@ -194,6 +194,9 @@ label {
 }
 
 @media (max-width: 551px) {
+  .container {
+    padding: 3rem 1rem;
+  }
   .slides-text-wrapper {
     grid-column-start: 1;
     grid-column-end: 2;
